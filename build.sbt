@@ -4,5 +4,5 @@ lazy val root = (project in file("."))
     name := "java-sbt-example",
     libraryDependencies ++= Seq(
         "net.aichler" % "jupiter-interface" % JupiterKeys.jupiterVersion.value % Test,
-        "io.cucumber" %% "cucumber-java" % "6.1.1" % Test)
+        "io.cucumber" % "cucumber-java" % "6.1.1" % Test)
 )
