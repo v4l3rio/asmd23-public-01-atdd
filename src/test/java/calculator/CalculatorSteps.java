@@ -1,8 +1,6 @@
 package calculator;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 
 public class CalculatorSteps {
     private int res = 0;
@@ -22,7 +20,7 @@ public class CalculatorSteps {
     @Then("the sum should be {int}")
     public void theSumShouldBe(int arg0) {
         this.calculator.add();
-        if (arg0 != this.calculator.getResult()) {
+        if (arg0 != this.calculator.getResult()) { // or using Junit's asserts
             throw new IllegalStateException();
         }
     }

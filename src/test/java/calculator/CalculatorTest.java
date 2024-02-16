@@ -21,7 +21,6 @@ public class CalculatorTest {
         assertEquals(14, calculator.getResult());
 
         calculator.enter(3);
-        assertThrows(IllegalStateException.class, ()->calculator.enter(5));
+        assertThrows(IllegalStateException.class, () -> calculator.enter(5));
     }
-
 }
