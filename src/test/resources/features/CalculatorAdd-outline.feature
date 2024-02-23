@@ -3,6 +3,7 @@ Feature:  Adding numbers with a Calculator
   As someone who is bad at math
   I want to be able to add numbers using a Calculator
 
+  #Sum
   Scenario Outline: Add two numbers
     Given I have a Calculator
     When I add <arg0> and <arg1>
